@@ -21,4 +21,8 @@ def creat_something():
 def get_result(usn):
     return {"Result":"Distinction","usn":5678}
 
+#path parameters with Type Hint
+@app.get("/candidate/(rollno)")
+def get_candidate(rollno:int):
+    return {"Result":"Distinction","rollno":rollno,"type":str(type(rollno))}
 
