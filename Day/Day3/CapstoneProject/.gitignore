@@ -1,0 +1,80 @@
+# ==============================================================================
+# FastAPI & Application Specific
+# ==============================================================================
+# Environment variables containing secrets and API keys
+.env
+.env.*
+!.env.example
+
+# Local databases (SQLite)
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+
+# Application logs
+logs/
+*.log
+*.log.*
+
+# FastAPI auto-generated documentation artifacts
+openapi.json
+
+# ==============================================================================
+# Python & Virtual Environments
+# ==============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual Environments (Pipenv, Poetry, venv, uv, etc.)
+.venv/
+venv/
+ENV/
+env/
+.env.bak/
+.venv.bak/
+bin/
+include/
+lib/
+share/
+pyvenv.cfg
+.pypackages/
+.ruff_cache/
+
+# ==============================================================================
+# Testing & Coverage
+# ==============================================================================
+.pytest_cache/
+.htmlcov/
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# ==============================================================================
+# IDEs & Text Editors
+# ==============================================================================
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# JetBrains (PyCharm)
+.idea/
+
+# General
+.DS_Store
+Thumbs.db
+*~
+*.swp
